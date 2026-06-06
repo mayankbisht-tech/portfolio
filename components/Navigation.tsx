@@ -19,12 +19,12 @@ const Navigation: React.FC<NavigationProps> = ({ activeSection, isScrolled }) =>
     }
   };
 
-  const navItems = ['home', 'projects', 'about', 'contact'];
+  const navItems = ['home', 'projects', 'skills', 'about', 'contact'];
 
   return (
     <motion.nav
       className={`fixed w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-gray-900/95 backdrop-blur-md py-2 border-b border-gray-800' : 'bg-transparent py-4'
+        isScrolled ? 'bg-black/95 backdrop-blur-md py-2 border-b border-neutral-900' : 'bg-transparent py-4'
       }`}
       initial={{ y: -100 }}
       animate={{ y: 0 }}
@@ -37,7 +37,7 @@ const Navigation: React.FC<NavigationProps> = ({ activeSection, isScrolled }) =>
             whileHover={{ scale: 1.05 }}
             onClick={() => scrollToSection('home')}
           >
-            <span className="bg-gradient-to-r from-cyan-400 via-emerald-400 to-teal-400 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-white via-slate-200 to-slate-400 bg-clip-text text-transparent">
               Mayank Bisht
             </span>
           </motion.div>
@@ -54,7 +54,7 @@ const Navigation: React.FC<NavigationProps> = ({ activeSection, isScrolled }) =>
                 {activeSection === item && (
                   <motion.div
                     layoutId="activeIndicator"
-                    className="absolute -bottom-1 left-0 right-0 h-0.5 bg-cyan-400"
+                    className="absolute -bottom-1 left-0 right-0 h-0.5 bg-white"
                     initial={false}
                     transition={{ type: 'spring', stiffness: 300, damping: 30 }}
                   />

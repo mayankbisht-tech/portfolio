@@ -9,12 +9,12 @@ const ContactSection: React.FC = () => {
   return (
     <section id="contact" className="py-24 relative overflow-hidden">
       <motion.div
-        className="absolute inset-0 opacity-20"
+        className="absolute inset-0 opacity-10"
         animate={{
           background: [
-            'radial-gradient(circle at 0% 50%, rgba(6, 182, 212, 0.2) 0%, transparent 50%)',
-            'radial-gradient(circle at 100% 50%, rgba(16, 185, 129, 0.2) 0%, transparent 50%)',
-            'radial-gradient(circle at 0% 50%, rgba(6, 182, 212, 0.2) 0%, transparent 50%)',
+            'radial-gradient(circle at 0% 50%, rgba(255, 255, 255, 0.06) 0%, transparent 50%)',
+            'radial-gradient(circle at 100% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 50%)',
+            'radial-gradient(circle at 0% 50%, rgba(255, 255, 255, 0.06) 0%, transparent 50%)',
           ],
         }}
         transition={{
@@ -33,7 +33,7 @@ const ContactSection: React.FC = () => {
           transition={{ duration: 0.6 }}
         >
           Let&apos;s Build Something{' '}
-          <span className="bg-gradient-to-r from-cyan-400 to-emerald-400 bg-clip-text text-transparent">Amazing</span>
+          <span className="bg-gradient-to-r from-white to-slate-300 bg-clip-text text-transparent">Amazing</span>
         </motion.h2>
 
         <motion.p
@@ -60,8 +60,8 @@ const ContactSection: React.FC = () => {
           href="https://mail.google.com/mail/?view=cm&fs=1&to=mayankbisht1107@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center bg-gradient-to-r from-cyan-600 to-emerald-600 hover:from-cyan-700 hover:to-emerald-700 px-8 py-4 rounded-lg font-medium transition-all duration-300"
-          whileHover={{ scale: 1.05, boxShadow: '0 10px 25px -5px rgba(0,255,136,0.3)' }}
+          className="inline-flex items-center bg-gradient-to-r from-white to-slate-200 text-black hover:from-slate-200 hover:to-white px-8 py-4 rounded-lg font-medium transition-all duration-300 border border-white/10"
+          whileHover={{ scale: 1.05, boxShadow: '0 10px 25px -5px rgba(255,255,255,0.08)' }}
           whileTap={{ scale: 0.95 }}
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

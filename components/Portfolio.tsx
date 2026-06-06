@@ -6,6 +6,7 @@ import { Github, Linkedin, Mail, ExternalLink } from 'lucide-react';
 import Navigation from './Navigation';
 import HeroSection from './HeroSection';
 import ProjectsSection from './ProjectsSection';
+import SkillsSection from './SkillsSection';
 import AboutSection from './AboutSection';
 import ContactSection from './ContactSection';
 
@@ -17,7 +18,7 @@ const Portfolio: React.FC = () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
 
-      const sections = ['home', 'projects', 'about', 'contact'];
+      const sections = ['home', 'projects', 'skills', 'about', 'contact'];
       const scrollPosition = window.scrollY + 200;
 
       for (const section of sections) {
@@ -38,7 +39,7 @@ const Portfolio: React.FC = () => {
 
   return (
     <motion.div
-      className="min-h-screen bg-gray-900 text-white font-sans"
+      className="min-h-screen bg-black text-white font-sans"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.8 }}
@@ -46,10 +47,11 @@ const Portfolio: React.FC = () => {
       <Navigation activeSection={activeSection} isScrolled={isScrolled} />
       <HeroSection />
       <ProjectsSection />
+      <SkillsSection />
       <AboutSection />
       <ContactSection />
 
-      <footer className="py-8 border-t border-gray-800 text-center text-gray-500 text-sm">
+      <footer className="py-8 border-t border-neutral-900 text-center text-gray-500 text-sm">
         <p>&copy; {new Date().getFullYear()} Mayank Bisht. Crafted with code and coffee.</p>
       </footer>
     </motion.div>
