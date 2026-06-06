@@ -47,20 +47,20 @@ const GreetingScreen: React.FC<GreetingScreenProps> = ({ onComplete }) => {
       initial={{ opacity: 1 }}
       animate={{
         opacity: isExiting ? 0 : 1,
-        backgroundColor: isExiting ? '#111827' : '#000000',
+        backgroundColor: isExiting ? '#050505' : '#000000',
       }}
       transition={{ duration: 0.3, ease: 'easeInOut' }}
     >
       {/* Animated background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-black via-gray-900 to-black">
+      <div className="absolute inset-0 bg-gradient-to-br from-black via-neutral-950 to-black">
         <motion.div
           className="absolute inset-0"
           animate={{
             background: [
-              'radial-gradient(circle at 20% 50%, rgba(6, 182, 212, 0.1) 0%, transparent 50%)',
-              'radial-gradient(circle at 80% 50%, rgba(16, 185, 129, 0.1) 0%, transparent 50%)',
-              'radial-gradient(circle at 50% 80%, rgba(6, 182, 212, 0.1) 0%, transparent 50%)',
-              'radial-gradient(circle at 20% 50%, rgba(6, 182, 212, 0.1) 0%, transparent 50%)',
+              'radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.08) 0%, transparent 50%)',
+              'radial-gradient(circle at 80% 50%, rgba(255, 255, 255, 0.12) 0%, transparent 50%)',
+              'radial-gradient(circle at 50% 80%, rgba(255, 255, 255, 0.08) 0%, transparent 50%)',
+              'radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.08) 0%, transparent 50%)',
             ],
           }}
           transition={{
@@ -101,7 +101,7 @@ const GreetingScreen: React.FC<GreetingScreenProps> = ({ onComplete }) => {
               className="text-6xl md:text-8xl lg:text-9xl font-bold"
               style={{
                 background:
-                  'linear-gradient(135deg, #ffffff 0%, #06b6d4 50%, #10b981 100%)',
+                  'linear-gradient(135deg, #ffffff 0%, #d4d4d4 50%, #ffffff 100%)',
                 WebkitBackgroundClip: 'text',
                 WebkitTextFillColor: 'transparent',
               }}
