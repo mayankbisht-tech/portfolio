@@ -28,6 +28,13 @@ const ProjectsSection: React.FC = () => {
       image: '/draw.png',
       url:'https://draw-app-brown-omega.vercel.app'
     },
+    {
+      title: 'Khata',
+      description: 'A free bill-splitting tool with equal and itemized split, tax/tip handling, and per-person totals.',
+      tools: ['Next.js', 'TypeScript', 'Tailwind', 'Vercel'],
+      image: '/logo.png',
+      url: 'https://digital-heroes-cyan-alpha.vercel.app/'
+    },
   ];
 
   return (
